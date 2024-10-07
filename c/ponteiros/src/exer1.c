@@ -7,8 +7,8 @@ int main(void) {
     p = &i;
     q = &j;
 
-    printf("%d\n", p == &i); // verdadeiro, pois p foi atribuido em &i
-    printf("%d\n", *p - *q); // -2, pois os ponteiros apontam para os valores de i e j
-    printf("%d\n", **&p); // 3, pois o ponteiro resulta no valor de i
-    printf("%d\n", 3 - *p/(*q) + 7); // 10, pois atribuimos os valores de i e j p/ os ponteiros 
+    printf("%d\n", p == &i); // verdadeiro, p reconhece quem é i (ele aponta para i)
+    printf("%d\n", *p - *q); // -2, é atribuido os valores de i e j a partir do endereço do ponteiro
+    printf("%d\n", **&p); // 3, o ponteiro recebe endereço de i (na qual foi atribuído) e retorna o seu valor 
+    printf("%d\n", 3 - *p/(*q) + 7); // 10, os valores de i e j são recuperados com os endereços dos ponteiros 
 }
