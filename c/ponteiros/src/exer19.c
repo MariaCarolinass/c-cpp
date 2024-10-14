@@ -1,15 +1,22 @@
 # include <stdio.h>
 # include <stdlib.h>
 
+/*A ordenação por Bubble sort é baseado na comparação dos elementos da lista e na 
+troca de posição dos mesmos quando necessário para atingir a ordenação pretendida.*/
+
 void ordenarValores(float *valores, int n) {
-    int i, j;
-    float posicao;
+    int i, j, aux;
+    
+    // Loops para comparar os elementos da esquerda para a direita
     for (i = 0; i < n - 1; i++) {
         for (j = 0; j < n - i - 1; j++) {
+            
+            // se o elemento à esquerda for maior que o próximo elemento, 
+            // faça a troca de posições
             if (valores[j] > valores[j + 1]) {
-                posicao = valores[j];
+                aux = valores[j];
                 valores[j] = valores[j + 1];
-                valores[j + 1] = posicao;
+                valores[j + 1] = aux;
             }
         }
     }
