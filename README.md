@@ -1,12 +1,16 @@
-# C e C++
+# Linguagens C e C++
 
 Repositório destinado aos estudos de C e C++.
 
-## Compilador - GCC
+## GCC
 
-**Compilando:** g++ programa.cpp -o programa
+Compilando projeto: `g++ programa.cpp -o programa`
 
-**Executando:** ./programa
+Executando projeto: `./programa`
+
+## Makefile
+
+Executando Makefile: `make run file=NOME_DO_PROGRAMA`
 
 ## IDE
 
